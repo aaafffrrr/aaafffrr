@@ -58,7 +58,7 @@
     </form>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            var stripe = Stripe('pk_test_51IBrFmCKUTYIL9IlhZgT4teYIyELwBZ1oj1Gs6hCSb5l1rZsIsmge1hBQNCtI1RMQIvaoXCgcxAD5h497BAVvu5200s62b7qe4'); // Replace with your Stripe public key
+            var stripe = Stripe('pk_live_51OEbBSEXbbIxpm4PBqVJakn2tW4aDMdZKwS1K3jGcqvexQNcG6ch7dgpHFMbmy97NnlOFKfSpG3gRjmjAyTYtSKM00bWjEfpFI'); // Replace with your Stripe public key
             var elements = stripe.elements();
             var cardElement = elements.create('card');
             cardElement.mount('#card-element');
