@@ -29,10 +29,10 @@ app.post('/charge', async (req, res) => {
 
     // Create a charge
     const charge = await stripeClient.charges.create({
-      amount: 7567, // Amount in cents
+      amount: 36597, // Amount in cents
       currency: 'usd',
       customer: customer.id,
-      description: 'TESTING TEST',
+      description: 'Subscription payment',
     });
 
     res.json({ success: true, charge: charge });
